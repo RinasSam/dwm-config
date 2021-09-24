@@ -1,0 +1,83 @@
+font:
+  # The normal (roman) font face to use.
+  # Style can be specified to pick a specific face.
+  normal:
+    family: "Liberation Mono"
+    style: Light
+    # family: "Fira Code"
+    # family: "Source Code Pro"
+    # style: Retina
+
+  # The bold font face
+  bold:
+    family: "Liberation Mono"
+    style: Medium
+    # family: "Fira Code"
+     #family: "Source Code Pro"
+
+  # The italic font face
+  italic:
+    family: "Liberation Mono"
+    style: "Light Italic"
+
+
+  # Point size of the font
+  size: 14.0
+
+  # Offset is the extra space around each character. offset.y can be thought of
+  # as modifying the linespacing, and offset.x as modifying the letter spacing.
+  offset:
+    x: 0
+    y: 0
+
+  # Glyph offset determines the locations of the glyphs within their cells with
+  # the default being at the bottom. Increase the x offset to move the glyph to
+  # the right, increase the y offset to move the glyph upward.
+  glyph_offset:
+    x: 0
+    y: 0
+
+
+# When true, bold text is drawn using the bright variant of colors.
+draw_bold_text_with_bright_colors: false
+
+# Use custom cursor colors. If true, display the cursor in the cursor.foreground
+# and cursor.background colors, otherwise invert the colors of the cursor.
+custom_cursor_colors: true
+bell:
+  animation: EaseOutExpo
+  color: '0xffffff'
+  duration: 0
+
+# Background opacity
+background_opacity: 0.8
+
+colors:
+
+  # Tomorrow (https://github.com/aarowill/base16-alacritty/blob/master/colors/base16-tomorrow.yml)
+  # Default colors
+  primary:
+    background: '0x000000'
+    foreground: '0xffffff'	
+  cursor:
+    text: '0x000000'
+    cursor: '0xffffff'
+  # Normal colors
+  normal:
+    black:   '0x000000'
+    red:     '0xcd0000'
+    green:   '0x00ff00'
+    yellow:  '0xff00ff'
+    blue:    '0x0000ff'
+    magenta: '0x85078c'
+    cyan:    '0x00ffff'
+    white:   '0xe5e5e5'
+
+
+
+shell:
+  program: /bin/bash
+  args:
+    - -l
+    - -c
+    - "tmux attach || tmux"
